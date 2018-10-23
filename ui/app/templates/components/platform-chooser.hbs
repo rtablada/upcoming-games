@@ -1,0 +1,7 @@
+<select name="platforms" onchange={{action @onchange value="target.value"}}>
+  <option>Choose a Platform</option>
+
+  {{#each platforms as |platform|}}
+    <option value="{{platform.id}}">{{platform.name}}</option>
+  {{/each}}
+</select>
