@@ -24,6 +24,7 @@
     "babel-eslint": "^8.0.0",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
+    "ember-auto-import": "^1.2.13",
     "ember-cli": "~3.5.0",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^6.16.0",
@@ -46,6 +47,7 @@
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "loader.js": "^4.7.0",
+    "moment": "^2.22.2",
     "qunit-dom": "^0.8.0"
   },
   "engines": {

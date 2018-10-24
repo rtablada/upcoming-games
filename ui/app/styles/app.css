@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #e0e0f3;
+  background: #d0d0e3;
 }
 
 .section {
@@ -15,4 +20,40 @@ body {
 .container {
   max-width: 70rem;
   margin: auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -1rem;
+}
+
+.grid > * {
+  margin: 1rem;
+  flex-basis: calc(100% / 4 - 2rem);
+  flex-grow: 1;
+}
+
+.game-tile {
+  padding: 0.5rem;
+  background: #eee;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+
+.cover {
+  position: relative;
+  padding-top: calc(100%);
+  background: #111;
+
+  overflow: hidden;
+}
+
+.cover img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: contain;
 }

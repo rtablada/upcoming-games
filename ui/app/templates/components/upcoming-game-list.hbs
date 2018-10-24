@@ -1,9 +1,11 @@
 {{#if selectedPlatform}}
   <h2>Upcoming games for {{selectedPlatform.name}}</h2>
 
-  {{#each games as |game|}}
-    <li>{{game.name}}</li>
-  {{/each}}
+  <div class="grid">
+    {{#each games as |game|}}
+      <GameTile @game={{game}} />
+    {{/each}}
+  </div>
 {{else}}
   <h2>Please select a platform above.</h2>
 {{/if}}
