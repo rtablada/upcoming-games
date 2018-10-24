@@ -13,6 +13,42 @@ body {
   background: #d0d0e3;
 }
 
+.app {
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.app--content {
+  flex-grow: 1;
+}
+
+.app--footer {
+  margin-top: 2rem;
+  background: #111;
+  color: #eee;
+}
+
+.app--footer a {
+  font-weight: bold;
+  color: #8be;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .section {
   padding: 1rem;
 }

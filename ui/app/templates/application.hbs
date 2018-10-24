@@ -1,9 +1,22 @@
-<div class="section">
-  <div class="container">
-    <h1>Upcoming Games</h1>
+<div class="app">
+  <div class="app--content">
+    <div class="section">
+      <div class="container">
+        <h1>Upcoming Games</h1>
 
-    <PlatformChooser @onchange={{action (mut platform)}} />
+        <PlatformChooser @onchange={{action (mut platform)}} />
 
-    <UpcomingGameList @platform={{platform}} />
+        <UpcomingGameList @platform={{platform}} />
+      </div>
+    </div>
+  </div>
+
+  <div class="app--footer">
+    <div class="container">
+      <div class="flex flex-between align-center">
+        <p>Made with 🥃, ❤️, and <a href="https://emberjs.com">Ember.js</a> by <a href="https://github.com/rtablada">Ryan Tablada</a></p>
+        <p>Copyright 2018</p>
+      </div>
+    </div>
   </div>
 </div>

@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "ember build",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist upcoming-games-app.surge.sh",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
